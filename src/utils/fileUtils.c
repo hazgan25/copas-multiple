@@ -76,7 +76,7 @@ void copyAllFiles(char files[][255], int fileCount, const char *title, int isEpi
 
         const char *extension = getFileExtension(files[i]);
 
-        snprintf(destination, sizeof(destination), "output/%s ", title);
+        snprintf(destination, sizeof(destination), "output/%s", title);
         sprintf(num, "%d", i + 1);
 
         if (isEpisode)

@@ -102,6 +102,9 @@ To remove all compiled files and executables, use:
 make clean
 ```
 
+## Example 🎞️
+![gif](./assets/copasMutiple.gif)
+
 ## 📬 Support
 
 If you encounter any issues or have questions, feel free to reach out by creating an issue on the GitHub repository.

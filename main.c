@@ -11,16 +11,14 @@ void getFiles(char files[MAX_FILES][255], int *fileCount);
 
 int main()
 {
-    char files[MAX_FILES][255], isEpisodeInput[10];
-    int fileCount = 0;
-    int isEpisode = 0;
+    char title[255], files[MAX_FILES][255], isEpisodeInput[10];
+    int fileCount = 0, isEpisode = 0;
 
     getFiles(files, &fileCount);
 
-    char title[100];
     printf("=== Rename All Files In This Folder and Sort by ASC ===\n");
     printf("Input Title: ");
-    scanf("%99s", title);
+    scanf(" %[^\n]s", title);
 
     while (1)
     {
@@ -46,7 +44,6 @@ int main()
     }
 
     clearOutputDirectory("output");
-    printf("main %d", isEpisode);
     copyAllFiles(files, fileCount, title, isEpisode);
 
     printf("Press Enter to exit...");

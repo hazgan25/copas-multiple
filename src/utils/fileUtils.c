@@ -68,7 +68,6 @@ void copyFile(const char *source, const char *destination)
 
 void copyAllFiles(char files[][255], int fileCount, const char *title, int isEpisode)
 {
-    printf("util %d", isEpisode);
 
     char destination[512];
     for (int i = 0; i < fileCount; i++)
